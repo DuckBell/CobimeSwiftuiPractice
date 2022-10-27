@@ -3,6 +3,4 @@
 *.xcworkspace/xcuserdata/
 Pods/*
 Podfile.lock
-*.xcuserstate
 *.resolved
-CombineSwiftUiPractice.xcworkspace/xcuserdata/duckjonglee.xcuserdatad/UserInterfaceState.xcuserstate

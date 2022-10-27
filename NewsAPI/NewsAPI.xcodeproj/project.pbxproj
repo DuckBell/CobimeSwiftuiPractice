@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8415880290ABD9B00B3EFA5 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = E841587F290ABD9B00B3EFA5 /* URLImage */; };
 		E862BB692908077500AC84FB /* NewsAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862BB682908077500AC84FB /* NewsAPIApp.swift */; };
 		E862BB6B2908077500AC84FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862BB6A2908077500AC84FB /* ContentView.swift */; };
 		E862BB6D2908077600AC84FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E862BB6C2908077600AC84FB /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8415880290ABD9B00B3EFA5 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NewsAPI;
+			packageProductDependencies = (
+				E841587F290ABD9B00B3EFA5 /* URLImage */,
+			);
 			productName = NewsAPI;
 			productReference = E862BB652908077500AC84FB /* NewsAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = E862BB5C2908077500AC84FB;
+			packageReferences = (
+				E841587E290ABD9B00B3EFA5 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = E862BB662908077500AC84FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E841587E290ABD9B00B3EFA5 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E841587F290ABD9B00B3EFA5 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E841587E290ABD9B00B3EFA5 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E862BB5D2908077500AC84FB /* Project object */;
 }

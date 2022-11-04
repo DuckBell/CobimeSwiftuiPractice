@@ -12,7 +12,7 @@ protocol NewsViewModel {
     func getArticles()
 }
 
-class NewsViewModelImpl: NewsViewModel {
+class NewsViewModelImpl: ObservableObject, NewsViewModel {
     
     private let service: NewsService
     
